@@ -170,13 +170,6 @@ export default function WordleGate({ onUnlock }) {
       setTimeout(() => { setShake(false); setMessage('') }, 600)
       return
     }
-    if (!VALID_WORDS.has(current)) {
-      setMessage('Not in word list')
-      setShake(true)
-      setTimeout(() => { setShake(false); setMessage('') }, 600)
-      return
-    }
-
     const result = evaluateGuess(current)
     const newGuesses = [...guesses, { word: current, result }]
     setGuesses(newGuesses)
