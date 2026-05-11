@@ -253,7 +253,7 @@ export default function WordleGate({ onUnlock }) {
             🔐 Wordle Gate
           </div>
           <h1 className="text-3xl sm:text-4xl font-black text-white mb-2">
-            Prove you know me
+            Birthday Wordle
           </h1>
           <p className="text-slate-400 text-sm leading-relaxed">
             Guess the 5-letter word to unlock your birthday surprise.
